@@ -19,6 +19,7 @@ namespace YamauchiEstoque.Controllers
                 var produtos = dao.Lista();
                 return View(produtos);
         }
+        [Route("produtos/form", Name = "FormProduto")]
         public ActionResult Form()
         {
             ViewBag.Produto = new Produto();
